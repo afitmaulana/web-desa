@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styling kustom ditambahkan di sini */
+body {
+    font-family: 'Poppins', sans-serif;
+}
