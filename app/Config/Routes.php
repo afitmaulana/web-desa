@@ -7,3 +7,8 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/profil', 'Home::profil');
+$routes->get('/layanan', 'Home::layanan');
+
+// --- TAMBAHKAN BARIS INI ---
+$routes->get('/produk', 'Home::produk');
+// -------------------------

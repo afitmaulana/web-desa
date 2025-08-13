@@ -1,32 +1,28 @@
-<!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= esc($title ?? 'Desa Kersik'); ?></title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?= esc($title); ?></title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Mengganti font default Bootstrap dengan Poppins */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa; /* Warna latar belakang mirip bg-gray-100 */
-        }
-        .btn-success {
-            --bs-btn-bg: #16a34a; /* Warna hijau yang lebih segar */
-            --bs-btn-border-color: #16a34a;
-            --bs-btn-hover-bg: #15803d;
-            --bs-btn-hover-border-color: #15803d;
-        }
-    </style>
+.navbar-nav .nav-link {
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffeb3b !important; /* warna kuning saat hover */
+}
+
+.navbar-nav .active {
+    border-bottom: 2px solid #ffeb3b;
+}
+</style>
+
 </head>
+
 <body>
 
     <?= $this->include('layout/header'); ?>
@@ -35,6 +31,8 @@
 
     <?= $this->include('layout/footer'); ?>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0rPoBfU2r1T/fYs4HwpK+E8DbkGaaPePz9DrvPcwq+PcCbVYdkzQkpB2R" crossorigin="anonymous"></script>
 </body>
+
 </html>
