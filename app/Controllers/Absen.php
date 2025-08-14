@@ -16,7 +16,8 @@ class Absen extends BaseController
     public function scan()
     {
         $data = [
-            'title' => 'Absensi QR Code'
+            'title' => 'Absensi QR Code',
+            'active' => 'absen_qr', // Tambahkan baris ini
         ];
         // Menggunakan layout dari template Anda
         return view('absen/scan', $data);

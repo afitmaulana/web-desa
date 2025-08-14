@@ -14,7 +14,8 @@ class Auth extends BaseController
         }
 
         $data = [
-            'title' => 'Login Admin'
+            'title' => 'Login Admin',
+            'active' => 'login', // Tambahkan baris ini
         ];
         return view('auth/login', $data);
     }

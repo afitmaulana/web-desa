@@ -29,7 +29,8 @@ class Admin extends BaseController
         $tanggal_hari_ini = date('Y-m-d');
         $data = [
             'title' => 'Dashboard Absensi Pegawai',
-            'kehadiran' => $this->absensiModel->getKehadiranHariIni($tanggal_hari_ini)
+            'kehadiran' => $this->absensiModel->getKehadiranHariIni($tanggal_hari_ini),
+            'active'    => 'pantau_absensi', // Tambahkan baris ini
         ];
 
         return view('admin/absensi/dashboard', $data);
@@ -48,7 +49,8 @@ class Admin extends BaseController
         $data = [
             'title' => 'Buat QR Code Absensi',
             'data_masuk' => $data_masuk,
-            'data_pulang' => $data_pulang
+            'data_pulang' => $data_pulang,
+            'active'      => 'pantau_absensi', // Tambahkan baris ini
         ];
 
         return view('admin/absensi/qrcode', $data);
